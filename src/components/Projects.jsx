@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef, useState } from 'react';
-import { FiExternalLink, FiGithub } from 'react-icons/fi';
 
 const projects = [
   {
@@ -44,13 +43,6 @@ function ProjectCard({ project, delay, inView }) {
       }}>
         <div style={{ fontSize: '5rem', filter: 'drop-shadow(0 4px 12px rgba(0,0,0,0.3))', transition: 'transform 0.4s', transform: hovered ? 'scale(1.15) rotate(5deg)' : 'scale(1)' }}>
           {project.emoji}
-        </div>
-        <div style={{
-          position: 'absolute', inset: 0, background: 'rgba(0,0,0,0.2)',
-          backdropFilter: hovered ? 'blur(2px)' : 'none', transition: 'all 0.3s',
-          display: 'flex', alignItems: 'center', justifyContent: 'center', flexDirection: 'column', gap: 12,
-          opacity: hovered ? 1 : 0,
-        }}>
         </div>
       </div>
 
