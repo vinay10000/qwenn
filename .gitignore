@@ -1,0 +1,15 @@
+```
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+dist/**
+
+# Development files
+server.log
+
+# Vite specific
+.vite/
+
+```
